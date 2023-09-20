@@ -6,17 +6,11 @@ global $db;
 
 $config = array();
 if(ENVIRONMENT == 'development') {
-	define("BASE_URL", "http://localhost/estoque/");
-	$config['dbname'] = 'estoque';
+	define("BASE_URL", "http://localhost/mvc_vini/");
+	$config['dbname'] = 'mvc_vini';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
-} else {
-	define("BASE_URL", "http://localhost/estoque/");
-	$config['dbname'] = 'nova_loja';
-	$config['host'] = 'localhost';
-	$config['dbuser'] = 'root';
-	$config['dbpass'] = 'root';
+	$config['dbpass'] = '';
 }
 
 $db = new PDO("mysql:dbname=".$config['dbname'].";host=".$config['host'], $config['dbuser'], $config['dbpass']);
