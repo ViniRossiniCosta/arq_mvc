@@ -11,9 +11,6 @@ class homeController extends Controller {
         $videos = new videos();
         $array['videos'] = $videos->getList(4);
 
-        print_r($array);
-        exit;
-
-        $this->loadView("home", $array);
+        $this->loadTemplate("home", $array);
     }
 }
