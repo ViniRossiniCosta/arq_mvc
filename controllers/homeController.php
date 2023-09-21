@@ -12,6 +12,7 @@ class homeController extends Controller {
         $array['videos'] = $videos->getList(4);
 
         print_r($array);
+        exit;
 
         $this->loadView("home", $array);
     }
