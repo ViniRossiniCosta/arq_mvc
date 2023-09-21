@@ -3,10 +3,10 @@ require 'environment.php';
 
 global $config;
 global $db;
+define("BASE_URL", "http://localhost:8080/simples/arq_mvc/");
 
 $config = array();
 if(ENVIRONMENT == 'development') {
-	define("BASE_URL", "http://localhost/mvc_vini/");
 	$config['dbname'] = 'mvc_vini';
 	$config['host'] = 'localhost';
 	$config['dbuser'] = 'root';
