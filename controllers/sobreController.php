@@ -7,11 +7,8 @@ class sobreController extends Controller {
     }
 
     public function index(){
-        echo "action index at controller";
-    }
-
-    public function vini() {
-        echo "minha pagina pq sim";
+        $array = array();
+        $this->loadTemplate("sobre", $array);
     }
 
 }
