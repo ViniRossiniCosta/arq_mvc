@@ -28,7 +28,7 @@ class Core {
 			$currentAction = 'index';
 		}
 
-		echo "controller ". $currentController;
+		echo "controller executado". $currentController;
 		exit;
 
 		if(!file_exists('controllers/'.$currentController.'.php')) {
