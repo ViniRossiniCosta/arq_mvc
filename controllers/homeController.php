@@ -1,9 +1,16 @@
 <?php
 class homeController extends Controller {
 
-    public function index() {
-        $data = array();
+    public function _construct() {
+        parent ::__construct();
+    }
 
-        $this->loadTemplate('home', $data);
+    public function index() {
+        $array = array();
+
+        $videos = new videos();
+        $array['videos'] = $videos->getList(4);
+
+        $this->loadView("home");
     }
 }
