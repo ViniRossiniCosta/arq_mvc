@@ -28,10 +28,6 @@ class Core {
 			$currentAction = 'index';
 		}
 
-		echo "controller executado ". $currentController;
-		echo "ação executada ". $currentAction;
-		exit;
-
 		if(!file_exists('controllers/'.$currentController.'.php')) {
 			$currentController = 'notFoundController';
 			$currentAction = 'index';
