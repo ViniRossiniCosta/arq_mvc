@@ -3,9 +3,6 @@ function enviarEmail() {
     var email = $('input[name=email]').val();
     var mensagem = $('textarea').val();
 
-    alert("Nome: "+nome);
-    exit;
-
     $.ajax({
         url: 'http://localhost:8080/simples/arq_mvc/contato/enviar/enviar_email',
         type: 'POST',
@@ -15,7 +12,7 @@ function enviarEmail() {
             msg:mensagem
         },
         success:function(html) {
-            $('.msg').html(html);
+            $('.msg').html('<br> cadastro realizado com sucesso');
         }
     });
 }
