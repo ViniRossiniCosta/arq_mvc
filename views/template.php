@@ -6,7 +6,7 @@
 	<title>Youtube</title>
 	<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/template.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<script type="text/javascript" src="<?php echo BASE_URL ?>assets/script.js"></script>
+	<script type="text/javascript" src="<?php echo BASE_URL ?>assets/js/script.js"></script>
 </head>
 
 <body>
